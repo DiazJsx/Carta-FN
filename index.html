@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Te llegó una carta!</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <h1 class="title">¡Oye, te llegó una carta!</h1>
+    
+    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTh0dTB3ZWR6OTkwY3lxMmduYzZ4N3M1Z3Q5dTRiNXFyMHZ4MHV4dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/KfBjG41ojhbrSNTElK/giphy.gif" alt="Mascota" class="mascot">
+
+    <div class="cards-container">
+        <div class="card" onclick="window.open('https://vm.tiktok.com/ZMktLYWfA/', '_blank')">
+            <i class="fas fa-code"></i>
+            <h2>Link Especial</h2>
+            <p>Click para abrir el link</p>
+        </div>
+
+        <div class="card" onclick="window.open('https://youtu.be/p1LYuW9GViA?si=46efFJPp2LFvXVAq', '_blank')">
+            <i class="fas fa-code"></i>
+            <h2>Link Especial</h2>
+            <p>Click para abrir el link</p>
+        </div>
+
+        <div class="card" onclick="window.open('https://pin.it/D1N4Cq1HS', '_blank')">
+            <i class="fas fa-code"></i>
+            <h2>Link Especial</h2>
+            <p>Click para abrir el link</p>
+        </div>
+
+        <div class="card" onclick="showMessage()">
+            <i class="fas fa-envelope-open-text"></i>
+            <h2>Carta Especial</h2>
+            <p>Click para leer el mensaje</p>
+        </div>
+    </div>
+
+    <div class="modal" id="messageModal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal()">×</button>
+            <h2 style="color: var(--primary)">Carta para una chica</h2>
+            <p class="modal-text">
+                Hola chica (Fabiola),<br><br>
+                En este 14 de febrero, solo quería enviarte un mensaje para desearte un día lleno de alegría y buenos momentos si es que sales con tu familia o amigos XD ya que novio no tienes 😹. Más allá de todo, siempre he valorado nuestro pasado y está carta es como una que nunca te mande en ese momento. y bueno deseo que la vida te siga trayendo felicidad ysi XD Que tengas un gran día! 🦦<br><br>
+                Eres una enana XD<br>
+                Cuidate :D 💜 | Toma la carta como de un chico del pasado
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        © De parte de diaz.jsx - <span id="year"></span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
